@@ -1,8 +1,8 @@
 ﻿namespace EmployeeAccountGenerator.Core;
 
-public class Person
+public class Applicant : IApplicant
 {
     public string FirstName { get; set; }
     public string LastName { get; set; }
-    public EmployeeRole Role { get; set; } = EmployeeRole.Developer;
+    public IAccountGenerator AccountGenerator { get; set; } = new AccountGenerator();
 }
