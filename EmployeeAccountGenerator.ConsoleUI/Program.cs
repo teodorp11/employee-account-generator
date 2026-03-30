@@ -3,7 +3,7 @@ using EmployeeAccountGenerator.Core.Applicants;
 
 namespace EmployeeAccountGenerator.ConsoleUI;
 
-class Program
+internal class Program
 {
     static void Main(string[] args)
     {
