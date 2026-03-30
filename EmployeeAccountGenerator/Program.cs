@@ -1,4 +1,5 @@
 ﻿using EmployeeAccountGenerator.Core;
+using EmployeeAccountGenerator.Core.Applicants;
 
 namespace EmployeeAccountGenerator.ConsoleUI;
 
@@ -27,28 +28,7 @@ class Program
         foreach (var employee in employees)
         {
             Console.WriteLine($"{employee.FirstName} {employee.LastName}: {employee.EmailAddress}");
-
-            switch (employee.Role)
-            {
-                case EmployeeRole.Developer:
-                    Console.WriteLine("Role: Developer\n");
-                    break;
-                case EmployeeRole.Designer:
-                    Console.WriteLine("Role: Designer\n");
-                    break;
-                case EmployeeRole.Tester:
-                    Console.WriteLine("Role: Tester\n");
-                    break;
-                case EmployeeRole.Manager:
-                    Console.WriteLine("Role: Manager\n");
-                    break;
-                case EmployeeRole.Executive:
-                    Console.WriteLine("Role: Executive\n");
-                    break;
-                default:
-                    Console.WriteLine("Role: None\n");
-                    break;
-            }
+            Console.WriteLine($"Role: {employee.Role}\n");
         }
 
         Console.ReadLine();

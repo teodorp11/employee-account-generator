@@ -1,4 +1,6 @@
-﻿namespace EmployeeAccountGenerator.Core;
+﻿using EmployeeAccountGenerator.Core.Applicants;
+
+namespace EmployeeAccountGenerator.Core.AccountGenerators;
 
 public class ManagerAccountGenerator : IAccountGenerator
 {
@@ -10,7 +12,7 @@ public class ManagerAccountGenerator : IAccountGenerator
 
         newEmployee.LastName = applicant.LastName;
 
-        newEmployee.EmailAddress = $"{applicant.FirstName.ToLower()}.{applicant.LastName.ToLower()}@company.com";
+        newEmployee.EmailAddress = $"{applicant.FirstName.ToLower()}.{applicant.LastName.ToLower()}@manager.com";
 
         newEmployee.Role = EmployeeRole.Manager;
 

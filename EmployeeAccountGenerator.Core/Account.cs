@@ -6,5 +6,5 @@ public class Account
     public string LastName { get; set; }
     public string EmailAddress { get; set; }
 
-    public EmployeeRole Role { get; set; }
+    public string Role { get; set; }
 }

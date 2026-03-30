@@ -1,6 +1,8 @@
-﻿namespace EmployeeAccountGenerator.Core;
+﻿using EmployeeAccountGenerator.Core.Applicants;
 
-public class ExecutiveAccountGenerator : IAccountGenerator
+namespace EmployeeAccountGenerator.Core.AccountGenerators;
+
+public class AccountGenerator : IAccountGenerator
 {
     public Account Create(IApplicant applicant)
     {
@@ -11,8 +13,6 @@ public class ExecutiveAccountGenerator : IAccountGenerator
         newEmployee.LastName = applicant.LastName;
 
         newEmployee.EmailAddress = $"{applicant.FirstName.ToLower()}.{applicant.LastName.ToLower()}@company.com";
-
-        newEmployee.Role = EmployeeRole.Executive;
 
         return newEmployee;
     }

@@ -1,4 +1,6 @@
-﻿namespace EmployeeAccountGenerator.Core;
+﻿using EmployeeAccountGenerator.Core.AccountGenerators;
+
+namespace EmployeeAccountGenerator.Core.Applicants;
 
 public class DeveloperApplicant : IApplicant
 {
