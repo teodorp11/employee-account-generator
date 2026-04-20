@@ -15,7 +15,8 @@ internal class Program
             new DesignerApplicant { FirstName = "Margaret", LastName = "Hamilton" },
             new ExecutiveApplicant { FirstName = "Charles", LastName = "Babbage" },
             new ManagerApplicant { FirstName = "Claude", LastName = "Shannon" },
-            new TesterApplicant { FirstName = "Katherine", LastName = "Johnson" }
+            new TesterApplicant { FirstName = "Katherine", LastName = "Johnson" },
+            new TrainerApplicant { FirstName = "Tim", LastName = "Corey" }
         };
 
         List<Account> employees = new List<Account>();
@@ -31,6 +32,7 @@ internal class Program
             Console.WriteLine($"Role: {employee.Role}\n");
         }
 
+        Console.WriteLine("Press Enter to finish...");
         Console.ReadLine();
     }
 }

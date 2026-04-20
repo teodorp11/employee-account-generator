@@ -11,4 +11,5 @@ public class EmployeeRole
     public static string Tester = "Tester";
     public static string Manager = "Manager";
     public static string Executive = "Executive";
+    public static string Trainer = "Trainer";
 }
