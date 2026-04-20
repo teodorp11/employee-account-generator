@@ -4,12 +4,12 @@ using System.Text;
 
 namespace EmployeeAccountGenerator.Core;
 
-public class EmployeeRole
+public static class EmployeeRole
 {
-    public static string Developer = "Developer";
-    public static string Designer = "Designer";
-    public static string Tester = "Tester";
-    public static string Manager = "Manager";
-    public static string Executive = "Executive";
-    public static string Trainer = "Trainer";
+    public const string Developer = "Developer";
+    public const string Designer = "Designer";
+    public const string Tester = "Tester";
+    public const string Manager = "Manager";
+    public const string Executive = "Executive";
+    public const string Trainer = "Trainer";
 }
